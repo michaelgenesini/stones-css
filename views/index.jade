@@ -1,0 +1,219 @@
+
+html
+	head
+	include partials/header
+	body
+		.container.align-center
+			.row.full-height
+				.column
+					.row
+						h1 STONES framework
+						h2 work in progress
+						img.medium-4(alt="stones stones-framework", src="assets/images/logo.png")
+			.row
+				h1.title Features
+				.column.medium-6.large-3
+					i.fa.fa-mobile.fa-5x
+					h2.subtitle Responsive
+					p
+						|Think Mobile, do Responsive.
+						|Stones allows you to quickly create a responsive grid for all kinds of screens, but mobile first.
+				.column.medium-6.large-3
+					i.fa.fa-umbrella.fa-5x
+					h2.subtitle Lightweight on demand
+					p
+						|Stones is modular.
+						|You can add to your project just the grid system, or import all modules you need.
+				.column.medium-6.large-3
+					i.fa.fa-columns.fa-5x
+					h2.subtitle Flexible columns
+					p
+						|Ok 12 columns layout is good.
+						|But if you need somthing different?
+						|With Stones and SASS you can set how many grid you want and compile your custom layout.
+				.column.medium-6.large-3
+					i.fa.fa-paint-brush.fa-5x
+					h2.subtitle Your own syntax
+					p
+						|row? column? col-sm-2? pure-g-1-3?
+						|Yes, they are really cool, but with Stones you can create a grid system based on your thought.
+			.row
+				h1.title no need to put container everywhere
+				h3.subtitle
+					|if you dont put 
+					code .container
+					| the content will be fluid for all devices
+				.column.medium-6.large-3
+					h4 1 Get Started Quickly
+					code column medium-6 large-3
+					p Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+				.column.small-6.medium-6.large-3
+					h4 2 Get Started Quickly
+					code column small-6 medium-6 large-3
+					p Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+				.column.small-6.medium-6.large-3
+					h4 3 Get Started Quickly
+					code column small-6 medium-6 large-3
+					p Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+				.column.medium-6.large-3.hide-small
+					h4 4 Get Started Quickly
+					code column medium-6 large-3 hide-small
+					p Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum. Suspendisse sodales pellentesque elementum.
+			.container-large
+				.row
+					h1.title
+						all these tags are wrapped with a
+						code .container-large
+					h3.subtitle so the container will appear from large size to greater screen
+					.column.medium-6.large-3
+						h4 1 Get Started Quickly
+						code column medium-6 large-3
+						p Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+					.column.small-6.medium-6.large-3
+						h4 2 Get Started Quickly
+						code column small-6 medium-6 large-3
+						p Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+					.column.small-6.medium-6.large-3
+						h4 3 Get Started Quickly
+						code column small-6 medium-6 large-3
+						p Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+					.column.medium-6.large-3.hide-small
+						h4 4 Get Started Quickly
+						code column medium-6 large-3 hide-small
+						p Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum. Suspendisse sodales pellentesque elementum.
+			.row.demoGrid
+				.column.medium-4.large-2.xlarge-10
+					p &nbsp;
+				.column.medium-8.large-10.xlarge-2
+					p &nbsp;
+				.column.medium-10.large-4.xlarge-8
+					p &nbsp;
+				.column.medium-2.large-8.xlarge-4
+					p &nbsp;
+				.column.medium-6.large-6.xlarge-6
+					p &nbsp;
+				.column.medium-6.large-6.xlarge-6
+					p &nbsp;
+				.column.medium-2.large-8.xlarge-4
+					p &nbsp;
+				.column.medium-10.large-4.xlarge-8
+					p &nbsp;
+				.column.medium-8.large-10.xlarge-2
+					p &nbsp;
+				.column.medium-4.large-2.xlarge-10
+					p &nbsp;
+			.row
+				h1.title Color Palette
+				.column.small-4.medium-2
+					h6 LIGHTGRAY
+					.column.bgcolor-lightgray.color-darkgray
+					.column.bgcolor-lightgrayd.color-darkgray
+					h6 LIGHTGRAYD
+				.column.small-4.medium-2
+					h6 MEDIUMGRAY
+					.column.bgcolor-mediumgray
+					.column.bgcolor-mediumgrayd
+					h6 MEDIUMGRAYD
+				.column.small-4.medium-2
+					h6 DARKGRAY
+					.column.bgcolor-darkgray
+					.column.bgcolor-darkgrayd
+					h6 DARKGRAYD
+				.column.small-4.medium-2
+					h6 GRAPEFRUIT
+					.column.bgcolor-grapefruit
+					.column.bgcolor-grapefruitd
+					h6 GRAPEFRUITD
+				.column.small-4.medium-2
+					h6 BITTERSWEET
+					.column.bgcolor-bittersweet
+					.column.bgcolor-bittersweetd
+					h6 BITTERSWEETD
+				.column.small-4.medium-2
+					h6 SUNFLOWER
+					.column.bgcolor-sunflower
+					.column.bgcolor-sunflowerd
+					h6 SUNFLOWERD
+				.column.small-4.medium-2
+					h6 GRASS
+					.column.bgcolor-grass
+					.column.bgcolor-grassd
+					h6 GRASSD
+				.column.small-4.medium-2
+					h6 MINT
+					.column.bgcolor-mint
+					.column.bgcolor-mintd
+					h6 MINTD
+				.column.small-4.medium-2
+					h6 AQUA
+					.column.bgcolor-aqua
+					.column.bgcolor-aquad
+					h6 AQUAD
+				.column.small-4.medium-2
+					h6 BLUEJEANS
+					.column.bgcolor-bluejeans
+					.column.bgcolor-bluejeansd
+					h6 BLUEJEANSD
+				.column.small-4.medium-2
+					h6 lavander
+					.column.bgcolor-lavander
+					.column.bgcolor-lavanderd
+					h6 lavanderd
+				.column.small-4.medium-2
+					h6 PINKROSE
+					div.column.bgcolor-pinkrose
+					.column.bgcolor-pinkrosed
+					h6 PINKROSED
+			.row
+				h1.title Basic Components
+			.row.align-center
+				h1.title Buttons
+				button button
+				button.grapefruit grapefruit
+				button.bittersweet bittersweet
+				button.sunflower sunflower
+				button.grass grass
+				button.mint mint
+				button.aqua aqua
+				button.bluejeans bluejeans
+				button.lavander lavander
+				button.pinkrose pinkrose
+			.row.align-center
+				h1.title Flat Buttons
+				button.flat-button button flat-button
+				button.flat-button.grapefruit grapefruit flat-button
+				button.flat-button.bittersweet bittersweet flat-button
+				button.flat-button.sunflower sunflower flat-button
+				button.flat-button.grass grass flat-button
+				button.flat-button.mint mint flat-button
+				button.flat-button.aqua aqua flat-button
+				button.flat-button.bluejeans bluejeans flat-button
+				button.flat-button.lavander lavander flat-button
+				button.flat-button.pinkrose pinkrose flat-button
+			.row
+				h1.title Input
+				input(type="text" value="" placeholder="Input")
+				input.success(type="text" value="success" placeholder="success")
+				input.warning(type="text" value="warning" placeholder="warning")
+				input.error(type="text" value="error" placeholder="error")
+				input.disabled(type="text" value="disabled" placeholder="disabled" disabled="disabled")
+			.row
+				.column.small-3
+					h1.title Dropdown
+					.dropdown
+						button.flat-button.grapefruit Dropdown
+							i.fa.fa-caret-down
+						ul
+							li
+								a(href="#") Action
+							li
+								a(href="#") Another action
+							li.divider
+							li
+								a(href="#") Separated Link
+		.footer
+			.row.align-center
+				hr
+				.column.small-6 First Column
+				.column.small-6 Second Column
+		include partials/javascript

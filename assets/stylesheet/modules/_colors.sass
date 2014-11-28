@@ -1,0 +1,41 @@
+// ==========================================================================
+// Colour palette
+// ========================================================================== */
+
+@import ../core/global
+
+// Return the CSS color for a palette color name
+@function getColor($name)
+	@if (map-has-key($colors, $name))
+		@return map-get($colors, $name)
+	@else
+		@warn "getColor: Color name '"+$name+ "'is not defined in the palette"
+		@return undefined
+
+// Return the CSS color for a palette color name
+@function getColorString($name)
+	@if (map-has-key($colors, $name))
+		@return ""+$name""
+	@else
+		@warn "getColorString: Color name '"+$name+"' is not defined in the palette"
+		@return undefined
+
+// create complete color palette
+$colors : map-merge($lightenColors, $darkenColors)
+// additional base colors
+$colors : map-merge($colors, $baseColors)
+
+
++exports("colors")
+	@each $color in $colors
+		.bgcolor-#{getColorString(nth($color,1))}
+			background-color: nth($color,2)
+			color: getColor(lightgray)
+			&:before
+				text-transform: uppercase
+				//content: "#{nth($color,2)}"
+
+	@each $color in $colors
+		.color-#{getColorString(nth($color,1))},
+		.color-#{getColorString(nth($color,1))} div
+			color: nth($color,2)

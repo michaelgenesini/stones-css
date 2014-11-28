@@ -1,0 +1,68 @@
+// ==========================================================================
+// Global: provides mixin for all the framework
+// ==========================================================================
+
+@import functions
+@import config
+@import crossbrowser
+
+// Set font
+=setFont($name,$extension:$defaultFontExtension)
+	@font-face
+		font-family: $name
+		font-style: normal
+		font-weight: normal
+		src: getFontUrl($name,$extension)
+
+// Get font
+=getFont($name)
+	font-family: $name, sans-serif, arial
+	font-weight: normal
+	letter-spacing: 0
+
+// We use this to set border radius
+=border-radius($radius: 3px)
+	border-radius: $radius
+
+// We use this to add padding ...
+=padding($value: 0.1em 1em)
+	padding: $value
+
+// We use this to add flat border bottom
+=border-flat($color: getColor(transparent))
+	border-bottom: 2px solid $color
+
+// We use this to center parent element
+=centered
+	text-align: center
+
+// We use this to do clear floats
+=clearfix
+	&:before, &:after
+		content: " "
+		display: table
+	&:after
+		clear: both
+
+// Set margin
+=margin($margin: 1em auto)
+	margin: $margin
+
+=line-height($height: $lineHeight)
+	line-height: $height
+
+=font-smoothing($value: on)
+	@if $value == on
+		+antialiased
+	@else
+		+antialiased(subpixel-antialiased,auto)
+
+=vertical-align($top:50%,$translate:-50%)
+	position: relative
+	top: $top
+	+transformTranslateY($translate)
+
+=no-text-shadow
+	-webkit-box-shadow: none!important
+	-moz-box-shadow: none!important
+	box-shadow: none!important

@@ -1,0 +1,29 @@
+/*! 
+ *	Stones v0.1.0
+ *	Copyright 2014 Michael Genesini All rights reserved
+ */
+
+//@import config.json
+
+// Normalize must be the first (if you want to import it) to prevent override of style
+@import modules/normalize
+
+// import what module you want
+@import modules/grid
+@import modules/base
+@import modules/buttons
+@import modules/forms
+@import modules/dropdown
+
+.demoGrid
+	& p
+		background: getColor(darkgrayd)
+		-webkit-border-radius: 1.5em
+		-moz-border-radius: 1.5em
+		border-radius: 1.5em
+		font-size: 0.75em
+		line-height: 1em
+		padding: 1em
+		color: #ffffff
+		text-transform: uppercase
+		font-weight: 800

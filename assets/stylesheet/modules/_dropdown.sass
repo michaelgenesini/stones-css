@@ -1,0 +1,29 @@
+// ==========================================================================
+// Dropdown
+// ========================================================================== */
+
++exports("dropdown")
+
+	.dropdown 
+		& button
+			padding-right: 1em
+		& i
+			margin-left: 1em
+			color: getColor(white)
+		& ul
+			position: absolute
+			display: none
+			left: 30%
+			z-index: 1000
+			float: left
+			min-width: 160px
+			padding: 1em
+			margin: 2px 0 0
+			font-size: 14px
+			text-align: left
+			list-style: none
+			background: getColor(lightgrayd)
+			+border-radius
+		& .open
+			& > & ul
+				display: block!important

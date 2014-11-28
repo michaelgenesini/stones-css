@@ -1,0 +1,65 @@
+// ==========================================================================
+// Base: provides the default style for all HTML elements.
+// ==========================================================================
+
+@import ../core/global
+@import colors
+
+// set font name and extension (default extension is ttf)
+//+setFont($font,"otf")
+
+
++exports("base")
+	body, html
+		font-size: $baseFontSize
+		+getFont($defaultFonts)
+		color: getColor(darkgrayd)
+		background-color: getColor(lightgray)
+		+line-height
+
+	a
+		text-decoration: none
+		+transition(color)
+		color: getColor(mediumgrayd)
+		&:hover
+			color: getColor(darkgrayd)
+	img
+		width: 100%
+
+	hr
+		margin-top: 2.5em
+		border-left: 0
+		border: 1px solid getColor(mediumgray)
+
+	code
+		background-color: getColor(lightgrayd)
+		+border-radius
+		+padding
+
+	input,textarea
+		outline: none
+
+
+	.align-left
+		text-align: left
+	.align-center
+		text-align: center
+	.align-right
+		text-align: right
+
+	.sidebar
+		position: fixed
+		top: 0
+		bottom: 0
+
+
+	.title,.subtitle
+		+centered
+		font-weight: 400
+		text-transform: uppercase
+		letter-spacing: 0.1em
+		+margin(1em 0 1em)
+		+line-height(1.2em)
+
+	.border
+		border: 1px solid getColor(mediumgray)

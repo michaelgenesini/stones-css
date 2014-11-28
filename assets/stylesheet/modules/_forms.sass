@@ -1,0 +1,29 @@
+// ==========================================================================
+// Form
+// ========================================================================== */
+
++exports("forms")
+
+	input
+		color: getColor(darkgray)
+		+transition(border)
+		border: 2px solid transparent
+		+padding(0.5em 1em)
+		+border-radius
+		+margin(1em)
+		&:focus
+			color: getColor(darkgray)
+			border-color: getColor(darkgray)
+		&.success
+			color: getColor(grassd)
+			border-color: getColor(grassd)
+		&.warning
+			color: getColor(sunflowerd)
+			border-color: getColor(sunflowerd)
+		&.error
+			color: getColor(grapefruitd)
+			border-color: getColor(grapefruitd)
+		&.disabled
+			color: getColor(lightgrayd)
+			background: getColor(lightgray)
+			border-color: getColor(lightgrayd)

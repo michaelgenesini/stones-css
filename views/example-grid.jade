@@ -1,0 +1,74 @@
+
+html
+	head
+	include partials/header
+	body
+		div.container
+			div.row
+				h1 Stones grid examples
+				p Basic grid layouts to get you familiar with building within the Bootstrap grid system.
+				hr
+			div.row
+				h3 Three equal columns
+				|Get three equal-width columns starting at desktops and scaling to large desktops. On mobile devices, tablets and below, the columns will automatically stack.
+				div.row.align-center.border.color-darkgray
+					div.column.small-4.bgcolor-lightgray .column .small-4
+					div.column.small-4.bgcolor-lightgrayd .column .small-4
+					div.column.small-4.bgcolor-lightgray .column .small-4
+			div.row
+				h3 Three unequal columns
+				|Get three columns starting at desktops and scaling to large desktops of various widths.
+				|Remember, grid columns should add up to twelve for a single horizontal block. More than that, and columns start stacking no matter the viewport.
+				div.row.align-center.border.color-darkgray
+					div.column.small-3.bgcolor-lightgray .column .small-3
+					div.column.small-6.bgcolor-lightgrayd .column .small-6
+					div.column.small-3.bgcolor-lightgray .column .small-3
+			div.row
+				h3 Two columns
+				|Get two columns starting at desktops and scaling to large desktops.
+				div.row.align-center.border.color-darkgray
+					div.column.small-8.bgcolor-lightgray .column .small-8
+					div.column.small-4.bgcolor-lightgrayd .column .small-4
+			div.row
+				h3 Full width, single column
+				|No grid classes are necessary for full-width elements.
+				hr
+			div.row
+				h3 Two columns with two nested columns
+				p Per the documentation, nesting is easy—just put a row of columns within an existing column. This gives you two columns starting at desktops and scaling to large desktops, with another two (equal widths) within the larger column.
+				p At mobile device sizes, tablets and down, these columns and their nested columns will stack.
+				div.row.align-center.color-darkgray
+					div.column.small-8.border.bgcolor-lightgray .column .small-8
+						div.row.border
+							div.column.small-6.bgcolor-lightgray .column .small-6
+							div.column.small-6.bgcolor-lightgrayd .column .small-6
+					div.column.small-4.bgcolor-lightgrayd .column .small-4
+				hr
+			div.row
+				h3 Mixed: mobile and desktop
+				|The Bootstrap 3 grid system has four tiers of classes: xs (phones), sm (tablets), md (desktops), and lg (larger desktops).
+				|You can use nearly any combination of these classes to create more dynamic and flexible layouts.
+				div.row.align-center.border.color-darkgray
+					div.column.small-12.medium-8.bgcolor-lightgray .column .small-12 .medium-8
+					div.column.small-6.medium-4.bgcolor-lightgrayd .column .small-6 .medium-4
+				div.row.align-center.border.color-darkgray
+					div.column.small-6.medium-4.bgcolor-lightgrayd .column .small-6 .medium-4
+					div.column.small-6.medium-4.bgcolor-lightgray .column .small-6 .medium-4
+					div.column.small-6.medium-4.bgcolor-lightgrayd .column .small-6 .medium-4
+				div.row.align-center.border.color-darkgray
+					div.column.small-6.bgcolor-lightgrayd .column .small-6
+					div.column.small-6.bgcolor-lightgray .column .small-6
+			div.row
+				h3 Column clearing
+				|Clear floats at specific breakpoints to prevent awkward wrapping with uneven content.
+				div.row.align-center.border.color-darkgray
+					div.column.small-6.medium-3.bgcolor-lightgrayd .column .small-6 .medium-3
+						|Resize your viewport or check it out on your phone for an example.
+					div.column.small-6.medium-3.bgcolor-lightgray .column .small-6 .medium-3
+					div.clearfix
+					div.column.small-6.medium-3.bgcolor-lightgray .column .small-6 .medium-3
+					div.column.small-6.medium-3.bgcolor-lightgrayd .column .small-6 .medium-3
+				hr
+				br
+
+		include partials/javascript

@@ -1,0 +1,48 @@
+// ==========================================================================
+// Buttons
+// ========================================================================== */
+
+@import ../core/global
+@import colors
+
++exports("buttons")
+	button
+		display: inline-block
+		*display: inline
+		+user-select
+		font-family: inherit
+		font-size: 100%
+		cursor: pointer
+		border: none
+		text-decoration: none
+		outline: none
+		min-width: 80px
+		+margin(0.5em)
+		+border-flat
+		+border-radius
+		+padding(0.3em 1em)
+
+	// color for default button
+	button
+		background-color: getColor(lightgrayd)
+		color: getColor(darkgrayd)
+		+transition(background-color)
+		&:hover
+			background-color: getColor(mediumgray)
+		&.flat-button
+			+border-flat(getColor(darkgray))
+		&:active
+			background-color: getColor(mediumgrayd)
+
+
+	// color for other buttons
+	@each $color in $lightenColors
+		button.#{getColorString(nth($color,1))}
+			background-color: nth($color,2)!important
+			color: getColor(lightgray)!important
+			&:hover
+				background-color: getColor(nth($color,1)+"d")!important
+			&.flat-button
+				+border-flat(getColor(nth($color,1)+"d"))
+			&:active
+				background-color: getColor(nth($color,1))!important

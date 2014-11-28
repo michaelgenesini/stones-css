@@ -1,0 +1,25 @@
+// ==========================================================================
+// Functions: provides functions for all the framework
+// ==========================================================================
+
+// IMPORT ONCE: We use this to prevent styles from being loaded multiple times for compenents that rely on other components.
+$modules: () !default
+=exports($name) 
+	@if (index($modules, $name)==null)
+		$modules: append($modules, $name)!global
+		@content
+
+// Get url of passed font name with extensions
+@function getFontUrl($name,$extension)
+	@return url($fontsDir+$name+"."+$extension)
+
+// Convert to rem
+@function convertToRem($value, $base-value: $remBase)
+	$value: strip-unit($value) / strip-unit($base-value) * 1rem
+	@if ($value == 0rem)
+		$value: 0// Turn 0rem into 0
+	@return $value
+
+// Calculate percentage n / tot
+@function percCalc($n, $tot)
+	@return percentage(($n / $tot))

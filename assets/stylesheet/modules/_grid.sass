@@ -1,0 +1,110 @@
+// ==========================================================================
+// Global: provides mixin for all the framework
+// ==========================================================================
+
+@import ../core/global
+
+//*, *:after, *:before
+//	-webkit-box-sizing: border-box
+//	-moz-box-sizing: border-box
+//	box-sizing: border-box
+
+=insideGutter($gutter:2.5em)
+	padding-left: $gutter
+	padding-right: $gutter
+
+=containerWidth($width:$containerWidth, $size:null)
+	.container
+		+insideGutter(2em)
+		+margin
+		width: $width
+	@if $size
+		.container-#{$size}
+			+margin
+			width: $width
+
+// Create presentational classes for grid
+=gridClasses($size,$hide:false)
+	@for $i from 1 through $numColumns
+		.#{$size}-#{$i}
+			width: percCalc($i,$numColumns)
+	@if $hide
+		.hide-#{$size}
+			display: none
+
++exports("grid")
+
+	// when you put a "full-height" to a row you have to put inside a column and your content inside a row
+	//	.row.full-height
+	//		.column
+	//			.row # your content here
+	//
+	.full-height
+		min-height: 100%
+		& .#{$column}
+			height: 100%
+			& .#{$row}
+				+vertical-align($top:40%,$translate:-40%)
+
+	.clearfix
+		+clearfix
+
+	.#{$row},.#{$column}
+		width: 100%
+		position: relative
+		float: left
+		vertical-align: middle
+		+margin(0)
+		+box-sizing
+
+	.#{$row}
+		margin-top: 1em
+		margin-bottom: 1em
+		&.inside-gutter
+			+insideGutter($gutter*2)
+		&.inside-gutter-2
+			+insideGutter($gutter*2.5)
+		&.inside-gutter-3
+			+insideGutter($gutter*3)
+		&.inside-gutter-4
+			+insideGutter($gutter*3.5)
+
+	.#{$column}
+		// add padding to content class
+		+padding(1em)
+
+	@media #{$screen}
+		+gridClasses(small)
+
+	@media #{$smallOnly}
+		+gridClasses(small,true)
+
+	@media #{$mediumUp}
+		+gridClasses(medium)
+		// This set container with media query width
+		+containerWidth($size:medium)
+
+	@media #{$mediumOnly}
+		+gridClasses(medium,true)
+		// This set container with media query width
+		+containerWidth
+
+	@media #{$largeUp}
+		+gridClasses(large)
+		// This set container with media query width
+		+containerWidth($size:large)
+
+	@media #{$largeOnly}
+		+gridClasses(large,true)
+		// This set container with media query width
+		+containerWidth
+
+	@media #{$xlargeUp}
+		+gridClasses(xlarge)
+		// This set container with media query width
+		+containerWidth($size:xlarge)
+
+	@media #{$xlargeOnly}
+		+gridClasses(xlarge,true)
+		// This set container with media query width
+		+containerWidth

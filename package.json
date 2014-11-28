@@ -1,0 +1,18 @@
+{
+  "name": "Stones",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-coffeelint": "0.0.13",
+    "grunt-contrib-coffee": "^0.12.0",
+    "grunt-contrib-connect": "^0.8.0",
+    "grunt-contrib-jade": "^0.13.0",
+    "grunt-contrib-copy": "^0.7.0",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-sass": "^0.8.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-notify": "^0.3.1",
+    "grunt-open": "^0.2.3",
+    "underscore": "^1.7.0"
+  }
+}
