@@ -10,7 +10,7 @@ Modular front-end framework built in Sass (and Coffee)
 **Requires Grunt Cli, which can be installed with** `sudo npm install -g grunt-cli`
 
 
-## Start environment
+## Installation
 ```
 $ npm install
 $ grunt server
