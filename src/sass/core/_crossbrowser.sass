@@ -3,43 +3,43 @@
 // ==========================================================================
 
 =box-sizing($type:border-box)
-	-webkit-box-sizing: $type
+	-webkit-box-sizing: 	$type
 	-moz-box-sizing: 		$type
-	box-sizing: 				$type
+	box-sizing: 			$type
 
 =user-select
-	-webkit-user-select: none
-	-moz-user-select: 	none
+	-webkit-user-select: 	none
+	-moz-user-select: 		none
 	-ms-user-select: 		none
-	user-select: 				none
+	user-select: 			none
 
 =antialiased ($moz: grayscale, $webkit:antialiased)
 	-moz-osx-font-smoothing: 	$moz
 	-webkit-font-smoothing: 	$webkit
 
 =transition ($element: all, $time: .2s, $func: ease-out)
-	-webkit-transition: $element $time $func
+	-webkit-transition: 	$element $time $func
 	-moz-transition: 		$element $time $func
 	-o-transition: 			$element $time $func
-	transition: 				$element $time $func
+	transition: 			$element $time $func
 
 
 =transformTranslate($valueX:-50%,$valueY:-50%)
-	-webkit-transform: 	translateX($valueX) translateY($valueY)
+	-webkit-transform: 		translateX($valueX) translateY($valueY)
 	-ms-transform: 			translateX($valueX) translateY($valueY)
-	transform: 					translateX($valueX) translateY($valueY)
+	transform: 				translateX($valueX) translateY($valueY)
 
 =transformTranslateY($value:-50%)
-	-webkit-transform: 	translateY($value)
+	-webkit-transform: 		translateY($value)
 	-ms-transform: 			translateY($value)
-	transform: 					translateY($value)
+	transform: 				translateY($value)
 
 =transformTranslateX($value:-50%)
-	-webkit-transform: 	translateX($value)
+	-webkit-transform: 		translateX($value)
 	-ms-transform: 			translateX($value)
-	transform: 					translateX($value)
+	transform: 				translateX($value)
 
 =transformRotate($deg:7.5deg)
-	-webkit-transform: 	rotate($deg)
+	-webkit-transform: 		rotate($deg)
 	-ms-transform: 			rotate($deg)
-	transform: 					rotate($deg)
+	transform: 				rotate($deg)
