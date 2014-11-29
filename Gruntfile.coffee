@@ -4,16 +4,18 @@ module.exports = (grunt) ->
 		jade:
 			compile:
 				files: [
-					cwd: "views",
-					src: "**/*.jade",
-					dest: "build",
+					cwd: "src/views",
+					src: "*.jade",
+					dest: "docs",
 					expand: true,
 					ext: ".html" ]
 
 		sass:
+			options:
+				sourcemap: "none"
 			app:
 				files:
-					'build/assets/stylesheet/stones.css': 'assets/stylesheet/stones.sass'
+					'docs/assets/css/stones.css': 'src/sass/stones.sass'
 				require: ['sass-json-vars']
 				noCache: true
 				debugInfo: true
@@ -21,47 +23,55 @@ module.exports = (grunt) ->
 		coffeelint:
 			app:
 				files:
-					src: ['assets/**/*.coffee']
+					src: ['src/js/**/*.coffee']
 
 		coffee:
 			options:
-				sourceMap: true
+				sourceMap: false
 			app:
 				files:
-					'build/assets/javascript/main.js': ['assets/javascript/**/*.coffee']
+					'docs/assets/js/main.js': ['src/js/**/*.coffee']
 
 		copy:
 			main:
 				files: [
 					{
 						expand: true
-						cwd: 'assets/images'
+						cwd: 'src/imgs'
 						src: '**/*'
-						dest: 'build/assets/images'
+						dest: 'docs/assets/imgs'
 					},
 					{
 						expand: true
-						cwd: 'assets/fonts'
+						cwd: 'src/fonts'
 						src: '**/*'
-						dest: 'build/assets/fonts'
+						dest: 'docs/assets/fonts'
 					}
 				]
 
 		watch:
 			jade:
-				files: ['views/**/*.jade']
+				files: ['src/views/**/*.jade']
 				tasks: ['jade', 'notify:watch']
 
 			coffee:
-				files: ['assets/javascript/**/*.coffee']
+				files: ['src/js/**/*.coffee']
 				tasks: ['coffeelint', 'coffee', 'notify:watch']
 
 			sass:
-				files: ['assets/stylesheet/**/*.sass']
+				files: ['src/sass/**/*.sass']
 				tasks: ['sass', 'notify:watch']
 
+			imgs:
+				files: ['src/imgs/*']
+				tasks: ['copy', 'notify:watch']
+
+			fonts:
+				files: ['src/fonts/*']
+				tasks: ['copy', 'notify:watch']
+
 			build:
-				files: ['build/assets/stylesheets/**/*.css', 'build/*.html', 'build/assets/javascript/**/*.js']
+				files: ['docs/assets/stylesheets/stone.css', 'docs/*.html', 'docs/assets/javascript/**/*.js']
 				options:
 					livereload: true
 
@@ -69,7 +79,7 @@ module.exports = (grunt) ->
 			server:
 				options:
 					port: 3333
-					base: 'build'
+					base: 'docs'
 
 		open:
 			dev:
