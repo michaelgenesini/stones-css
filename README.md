@@ -3,6 +3,8 @@ Stones
 
 Modular front-end framework built in Sass (and Coffee)
 
+(Demo)[http://michaelgenesini.github.io/stones]
+
 ## Requirements
 
 **Requires Sass, which can be installed with** `gem install sass`
