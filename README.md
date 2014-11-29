@@ -5,10 +5,8 @@ Modular front-end framework built in Sass (and Coffee)
 
 <p align="center">
   <img src="https://copy.com/H717QhjtU7PhmYNt" alt="stones framework"/>
+  <a href="http://michaelgenesini.github.io/stones">Demo</a>
 </p>
-
-[Demo](http://michaelgenesini.github.io/stones)
-
 
 
 ## Requirements
