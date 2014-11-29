@@ -3,6 +3,8 @@ Stones
 
 Modular front-end framework built in Sass (and Coffee)
 
+![Stones](http://michaelgenesini.com/images/stones.png)
+
 [Demo](http://michaelgenesini.github.io/stones)
 
 ## Requirements
