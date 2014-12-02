@@ -899,7 +899,7 @@ hr {
 code {
   background-color: #E6E9ED;
   border-radius: 3px;
-  padding: 0.1em 1em; }
+  padding: 0 0.2em; }
 
 input, textarea {
   outline: none; }
@@ -1112,23 +1112,32 @@ input {
 .dropdown button {
   padding-right: 1em; }
 .dropdown i {
-  margin-left: 1em;
+  display: inline;
+  margin-left: 0.5em;
   color: #FFF; }
 .dropdown ul {
   position: absolute;
+  top: 95%;
+  left: 24px;
   display: none;
-  left: 30%;
   z-index: 1000;
   float: left;
   min-width: 160px;
   padding: 1em;
   margin: 2px 0 0;
-  font-size: 14px;
+  font-size: 1em;
   text-align: left;
   list-style: none;
   background: #E6E9ED;
   border-radius: 3px; }
-.dropdown .open > .dropdown .open ul {
+  .dropdown ul li.divider {
+    height: 1px;
+    margin: 9px 0;
+    overflow: hidden;
+    background-color: #CCD1D9; }
+  .dropdown ul li i {
+    color: #CCD1D9; }
+.dropdown ul.open {
   display: block !important; }
 
 .demoGrid p {
