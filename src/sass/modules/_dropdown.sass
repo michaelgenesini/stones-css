@@ -8,22 +8,31 @@
 		& button
 			padding-right: 1em
 		& i
-			margin-left: 1em
+			display: inline
+			margin-left: 0.5em
 			color: getColor(white)
 		& ul
 			position: absolute
+			top: 95%
+			left: 24px
 			display: none
-			left: 30%
 			z-index: 1000
 			float: left
 			min-width: 160px
 			padding: 1em
 			margin: 2px 0 0
-			font-size: 14px
+			font-size: 1em
 			text-align: left
 			list-style: none
 			background: getColor(lightgrayd)
 			+border-radius
-		& .open
-			& > & ul
-				display: block!important
+			& li
+				&.divider
+					height: 1px
+					margin: 9px 0
+					overflow: hidden
+					background-color: getColor(mediumgray)
+				& i
+					color: getColor(mediumgray)
+		& ul.open
+			display: block!important

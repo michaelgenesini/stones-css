@@ -2,7 +2,7 @@
   console.log("Hi Folks!");
 
   $(".dropdown").click(function() {
-    $(this).toggleClass("open");
+    $(this).find("ul").toggleClass("open");
   });
 
 }).call(this);
