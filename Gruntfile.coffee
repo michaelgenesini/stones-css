@@ -2,6 +2,8 @@ module.exports = (grunt) ->
 	grunt.initConfig
 
 		jade:
+			options:
+				pretty: true
 			compile:
 				files: [
 					cwd: "src/views",
