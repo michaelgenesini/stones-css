@@ -17,13 +17,21 @@
 		background-color: getColor(lightgray)
 		+line-height
 
+	h1
+		font-size: 2em
+	h2
+		font-size: 1.5em
+	h3
+		font-size: 1.17em
+	h5
+		font-size: 0.83em
+	h6
+		font-size: 0.75em
+
 	h1, h2, h3, h4, h5, h6
 		font-family: inherit
 		line-height: 1.1
-		color: inherit
-	.text-thin
-		font-weight: 100
-
+		margin: 0.2
 
 	a
 		text-decoration: none
@@ -47,6 +55,11 @@
 	input,textarea
 		outline: none
 
+	.text-thin
+		font-weight: 100
+
+	.text-fat
+		font-weight: bold
 
 	.align-left
 		text-align: left
@@ -60,14 +73,19 @@
 		top: 0
 		bottom: 0
 
-
 	.title,.subtitle
 		+centered
-		font-weight: 400
 		text-transform: uppercase
 		letter-spacing: 0.1em
-		+margin(1em 0 1em)
 		+line-height(1.2em)
+
+	.title
+		font-weight: 400
+		+margin(1em 0 1em)
+
+	.subtitle
+		font-weight: bold
+		+margin(0 0 0.8em)
 
 	.border
 		border: 1px solid getColor(mediumgray)

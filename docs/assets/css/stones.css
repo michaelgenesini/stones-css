@@ -223,8 +223,8 @@ th {
   box-sizing: border-box; }
 
 .row {
-  margin-top: 1em;
-  margin-bottom: 1em; }
+  margin-top: 0.5em;
+  margin-bottom: 0.5em; }
   .row.inside-gutter {
     padding-left: 2em;
     padding-right: 2em; }
@@ -239,6 +239,7 @@ th {
     padding-right: 3.5em; }
 
 .column {
+  margin-top: -1px;
   padding: 1em; }
 
 @media only screen {
@@ -878,13 +879,25 @@ body, html {
   background-color: #F5F7FA;
   line-height: 1.5em; }
 
+h1 {
+  font-size: 2em; }
+
+h2 {
+  font-size: 1.5em; }
+
+h3 {
+  font-size: 1.17em; }
+
+h5 {
+  font-size: 0.83em; }
+
+h6 {
+  font-size: 0.75em; }
+
 h1, h2, h3, h4, h5, h6 {
   font-family: inherit;
   line-height: 1.1;
-  color: inherit; }
-
-.text-thin {
-  font-weight: 100; }
+  margin: 0.2; }
 
 a {
   text-decoration: none;
@@ -912,6 +925,12 @@ code {
 input, textarea {
   outline: none; }
 
+.text-thin {
+  font-weight: 100; }
+
+.text-fat {
+  font-weight: bold; }
+
 .align-left {
   text-align: left; }
 
@@ -928,11 +947,17 @@ input, textarea {
 
 .title, .subtitle {
   text-align: center;
-  font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  margin: 1em 0 1em;
   line-height: 1.2em; }
+
+.title {
+  font-weight: 400;
+  margin: 1em 0 1em; }
+
+.subtitle {
+  font-weight: bold;
+  margin: 0 0 0.8em; }
 
 .border {
   border: 1px solid #CCD1D9; }
