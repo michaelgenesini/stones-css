@@ -3,8 +3,8 @@ html
 	head
 	include partials/header
 	body
-		.container.align-center
-			.row.full-height
+		.container
+			.row.full-height.align-center
 				.column
 					.row
 						h1 STONES framework
@@ -14,7 +14,7 @@ html
 							a(href="https://github.com/michaelgenesini/Stones") View Project GitHub
 						h3
 							a(href="grid.html") Grid Example
-			.row
+			.row.align-center
 				h1.title Features
 				.column.medium-6.large-3
 					i.fa.fa-mobile.fa-5x
@@ -41,12 +41,12 @@ html
 					p
 						|row? column? col-sm-2? pure-g-1-3?
 						|Yes, they are really cool, but with Stones you can create a grid system based on your thought.
-			.row
+			.row.align-center
 				h1.title no need to put container everywhere
 				h3.subtitle
 					|if you dont put 
 					code .container
-					| the content will be fluid for all devices
+					|the content will be fluid for all devices
 				.column.medium-6.large-3
 					h4 1 Get Started Quickly
 					code column medium-6 large-3
@@ -63,10 +63,10 @@ html
 					h4 4 Get Started Quickly
 					code column medium-6 large-3 hide-small
 					p Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum. Suspendisse sodales pellentesque elementum.
-			.container-large
+			.container-large.align-center
 				.row
 					h1.title
-						all these tags are wrapped with a
+						|all these tags are wrapped with a 
 						code .container-large
 					h3.subtitle so the container will appear from large size to greater screen
 					.column.medium-6.large-3
@@ -195,14 +195,14 @@ html
 				button.flat-button.lavander lavander flat-button
 				button.flat-button.pinkrose pinkrose flat-button
 			.row
-				h1.title Input
-				input(type="text" value="" placeholder="Input")
-				input.success(type="text" value="success" placeholder="success")
-				input.warning(type="text" value="warning" placeholder="warning")
-				input.error(type="text" value="error" placeholder="error")
-				input.disabled(type="text" value="disabled" placeholder="disabled" disabled="disabled")
-			.row
-				.column.small-3
+				.column.medium-9.align-center
+					h1.title Input
+					input(type="text" value="" placeholder="Input")
+					input.success(type="text" value="success" placeholder="success")
+					input.warning(type="text" value="warning" placeholder="warning")
+					input.error(type="text" value="error" placeholder="error")
+					input.disabled(type="text" value="disabled" placeholder="disabled" disabled="disabled")
+				.column.medium-3
 					h1.title Dropdown
 					.dropdown
 						button.flat-button.grapefruit Dropdown
@@ -215,6 +215,7 @@ html
 							li.divider
 							li
 								a(href="#") Separated Link
+									i.fa.fa-sign-out
 		.footer
 			.row.align-center
 				hr
