@@ -239,7 +239,6 @@ th {
     padding-right: 3.5em; }
 
 .column {
-  margin-top: -1px;
   padding: 1em; }
 
 @media only screen {
@@ -952,7 +951,7 @@ h6 {
   margin: 1.4em 0 0.4em; }
 
 .subtitle {
-  margin: 0 0 0.6em; }
+  margin: 0.6em 0 0.6em; }
 
 a {
   text-decoration: none;
