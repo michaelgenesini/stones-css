@@ -594,169 +594,197 @@ th {
   background-color: #F5F7FA;
   color: #F5F7FA; }
   .bgcolor-lightgray:before {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    content: "#F5F7FA"; }
 
 .bgcolor-mediumgray {
   background-color: #CCD1D9;
   color: #F5F7FA; }
   .bgcolor-mediumgray:before {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    content: "#CCD1D9"; }
 
 .bgcolor-darkgray {
   background-color: #656D78;
   color: #F5F7FA; }
   .bgcolor-darkgray:before {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    content: "#656D78"; }
 
 .bgcolor-grapefruit {
   background-color: #ED5565;
   color: #F5F7FA; }
   .bgcolor-grapefruit:before {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    content: "#ED5565"; }
 
 .bgcolor-bittersweet {
   background-color: #FC6E51;
   color: #F5F7FA; }
   .bgcolor-bittersweet:before {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    content: "#FC6E51"; }
 
 .bgcolor-sunflower {
   background-color: #FFCE54;
   color: #F5F7FA; }
   .bgcolor-sunflower:before {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    content: "#FFCE54"; }
 
 .bgcolor-grass {
   background-color: #A0D468;
   color: #F5F7FA; }
   .bgcolor-grass:before {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    content: "#A0D468"; }
 
 .bgcolor-mint {
   background-color: #48CFAD;
   color: #F5F7FA; }
   .bgcolor-mint:before {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    content: "#48CFAD"; }
 
 .bgcolor-aqua {
   background-color: #4FC1E9;
   color: #F5F7FA; }
   .bgcolor-aqua:before {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    content: "#4FC1E9"; }
 
 .bgcolor-bluejeans {
   background-color: #5D9CEC;
   color: #F5F7FA; }
   .bgcolor-bluejeans:before {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    content: "#5D9CEC"; }
 
 .bgcolor-lavander {
   background-color: #AC92EC;
   color: #F5F7FA; }
   .bgcolor-lavander:before {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    content: "#AC92EC"; }
 
 .bgcolor-pinkrose {
   background-color: #EC87C0;
   color: #F5F7FA; }
   .bgcolor-pinkrose:before {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    content: "#EC87C0"; }
 
 .bgcolor-lightgrayd {
   background-color: #E6E9ED;
   color: #F5F7FA; }
   .bgcolor-lightgrayd:before {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    content: "#E6E9ED"; }
 
 .bgcolor-mediumgrayd {
   background-color: #AAB2BD;
   color: #F5F7FA; }
   .bgcolor-mediumgrayd:before {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    content: "#AAB2BD"; }
 
 .bgcolor-darkgrayd {
   background-color: #434A54;
   color: #F5F7FA; }
   .bgcolor-darkgrayd:before {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    content: "#434A54"; }
 
 .bgcolor-grapefruitd {
   background-color: #DA4453;
   color: #F5F7FA; }
   .bgcolor-grapefruitd:before {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    content: "#DA4453"; }
 
 .bgcolor-bittersweetd {
   background-color: #E9573F;
   color: #F5F7FA; }
   .bgcolor-bittersweetd:before {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    content: "#E9573F"; }
 
 .bgcolor-sunflowerd {
   background-color: #F6BB42;
   color: #F5F7FA; }
   .bgcolor-sunflowerd:before {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    content: "#F6BB42"; }
 
 .bgcolor-grassd {
   background-color: #8CC152;
   color: #F5F7FA; }
   .bgcolor-grassd:before {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    content: "#8CC152"; }
 
 .bgcolor-mintd {
   background-color: #37BC9B;
   color: #F5F7FA; }
   .bgcolor-mintd:before {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    content: "#37BC9B"; }
 
 .bgcolor-aquad {
   background-color: #3BAFDA;
   color: #F5F7FA; }
   .bgcolor-aquad:before {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    content: "#3BAFDA"; }
 
 .bgcolor-bluejeansd {
   background-color: #4A89DC;
   color: #F5F7FA; }
   .bgcolor-bluejeansd:before {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    content: "#4A89DC"; }
 
 .bgcolor-lavanderd {
   background-color: #967ADC;
   color: #F5F7FA; }
   .bgcolor-lavanderd:before {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    content: "#967ADC"; }
 
 .bgcolor-pinkrosed {
   background-color: #D770AD;
   color: #F5F7FA; }
   .bgcolor-pinkrosed:before {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    content: "#D770AD"; }
 
 .bgcolor-transparent {
   background-color: transparent;
   color: #F5F7FA; }
   .bgcolor-transparent:before {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    content: "transparent"; }
 
 .bgcolor-white {
   background-color: #FFF;
   color: #F5F7FA; }
   .bgcolor-white:before {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    content: "#FFF"; }
 
 .bgcolor-gray {
   background-color: #CCC;
   color: #F5F7FA; }
   .bgcolor-gray:before {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    content: "#CCC"; }
 
 .bgcolor-black {
   background-color: #000;
   color: #F5F7FA; }
   .bgcolor-black:before {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    content: "#000"; }
 
 .color-lightgray,
 .color-lightgray div {
@@ -870,34 +898,61 @@ th {
 .color-black div {
   color: #000; }
 
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
 body, html {
-  font-size: 100%;
+  color: #434A54;
+  background-color: #F5F7FA;
+  font-size: 16px;
   font-family: "Open Sans", sans-serif, Arial, sans-serif, arial;
   font-weight: normal;
   letter-spacing: 0;
-  color: #434A54;
-  background-color: #F5F7FA;
-  line-height: 1.5em; }
+  line-height: 1.42857em; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: inherit;
+  line-height: 1.3;
+  color: inherit;
+  letter-spacing: 0.05; }
 
 h1 {
   font-size: 2em; }
 
 h2 {
-  font-size: 1.5em; }
+  font-size: 1.8em; }
 
 h3 {
-  font-size: 1.17em; }
+  font-size: 1.5em; }
+
+h4 {
+  font-size: 1.3em; }
 
 h5 {
-  font-size: 0.83em; }
+  font-size: 1.17em; }
 
 h6 {
-  font-size: 0.75em; }
+  font-size: 1em; }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: inherit;
-  line-height: 1.1;
-  margin: 0.2; }
+.title, .subtitle {
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  line-height: 1.2em; }
+
+.title {
+  margin: 1.4em 0 0.4em; }
+
+.subtitle {
+  margin: 0 0 0.6em; }
 
 a {
   text-decoration: none;
@@ -922,6 +977,11 @@ code {
   border-radius: 3px;
   padding: 0 0.2em; }
 
+blockquote {
+  padding: 0 0 0 16px;
+  margin: 0;
+  border-left: 3px solid #E6E9ED; }
+
 input, textarea {
   outline: none; }
 
@@ -944,20 +1004,6 @@ input, textarea {
   position: fixed;
   top: 0;
   bottom: 0; }
-
-.title, .subtitle {
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  line-height: 1.2em; }
-
-.title {
-  font-weight: 400;
-  margin: 1em 0 1em; }
-
-.subtitle {
-  font-weight: bold;
-  margin: 0 0 0.8em; }
 
 .border {
   border: 1px solid #CCD1D9; }
