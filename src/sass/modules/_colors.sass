@@ -33,7 +33,7 @@ $colors : map-merge($colors, $baseColors)
 			color: getColor(lightgray)
 			&:before
 				text-transform: uppercase
-				//content: "#{nth($color,2)}"
+				content: "#{nth($color,2)}"
 
 	@each $color in $colors
 		.color-#{getColorString(nth($color,1))},
