@@ -1,12 +1,14 @@
 {
   "name": "stones-css",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "ignore": [
     "docs/",
+    "node_modules",
+    ".sass-cache",
     ".gitignore",
     "_config.yml"
   ],
   "main": [
-    "src/stones.sass"
+    "build/stones.sass"
   ]
 }
