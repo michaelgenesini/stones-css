@@ -1,0 +1,12 @@
+{
+  "name": "stones-css",
+  "version": "0.1.0",
+  "ignore": [
+    "docs/",
+    ".gitignore",
+    "_config.yml"
+  ],
+  "main": [
+    "src/stones.sass"
+  ]
+}
