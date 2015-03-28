@@ -17,7 +17,7 @@ module.exports = (grunt) ->
 				sourcemap: "none"
 			app:
 				files:
-					'docs/assets/css/stones.css': 'src/sass/stones.sass'
+					['docs/assets/css/stones.css': 'src/sass/stones.sass','build/stones.css': 'src/sass/stones.sass']
 				require: ['sass-json-vars']
 				noCache: true
 				debugInfo: true
