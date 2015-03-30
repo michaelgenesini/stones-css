@@ -13,8 +13,8 @@ Modular front-end framework built in Sass (and Coffee)
 ## Contents
 
 - [Installation](#installation)
-- [Usage](#usage)
 - [Template layout](#template-layout)
+- [Usage](#usage)
 - [Author](#author)
 - [License](#license)
 
@@ -22,13 +22,17 @@ Modular front-end framework built in Sass (and Coffee)
 
 ### Manual installation
 
-Download the[lastest release](https://github.com/michaelgenesini/Stones-framework/releases/latest) and copy the **stones.css** or the **stones.sass** file and add it to your project folder. Take a look at [usage guidelines](#usage) to customize the compiled css.
+Download the [lastest release](https://github.com/michaelgenesini/Stones-framework/releases/latest) and copy the **stones.css** or the **stones.sass** file and add it to your project folder. Take a look at [usage guidelines](#usage) to customize the compiled css.
 
 ### Bower
 Install Stones with Bower by adding `stones-css` to your app's `bower.json`, otherwise install it via Bower by typing `bower install stones-css`.
 
 # Template layout
 ![stones-framework-template](docs/assets/imgs/stones-template.png)
+
+# Usage
+
+`coming soon`
 
 # Author
 Michael Genesini
