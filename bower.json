@@ -15,19 +15,9 @@
     ".gitignore",
     "_config.yml",
     "**/.*",
-    "bower_components",
-    "docs/bower_components",
-    "test",
-    "tests"
+    "docs/bower_components"
   ],
-  "main": [
-    "dist/css/stones.css",
-    "dist/js/stones.js",
-    "dist/imgs/*",
-    "dist/fonts/*",
-    "src/sass/*",
-    "src/coffee/*"
-  ],
+  "main": "dist/css/stones.css",
   "dependencies": {
     "fontawesome": "~4.3.0"
   },
