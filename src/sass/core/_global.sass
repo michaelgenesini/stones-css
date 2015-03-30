@@ -6,20 +6,6 @@
 @import config
 @import crossbrowser
 
-// Set font
-=setFont($name,$extension:$defaultFontExtension)
-	@font-face
-		font-family: $name
-		font-style: normal
-		font-weight: normal
-		src: getFontUrl($name,$extension)
-
-// Get font
-=getFont($name)
-	font-family: $name, sans-serif, arial
-	font-weight: normal
-	letter-spacing: 0
-
 // We use this to set border radius
 =border-radius($radius: 3px)
 	border-radius: $radius
