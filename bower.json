@@ -17,7 +17,14 @@
     "**/.*",
     "docs/bower_components"
   ],
-  "main": "dist/css/stones.css",
+  "main": [
+    "dist/css/stones.css",
+    "dist/js/stones.js",
+    "dist/imgs/*",
+    "dist/fonts/*",
+    "src/sass/*",
+    "src/coffee/*"
+  ],
   "dependencies": {
     "fontawesome": "~4.3.0"
   },
