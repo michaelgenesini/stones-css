@@ -24,5 +24,9 @@ $ npm install
 $ grunt server
 ```
 
+## Template layout
+
+![stones-framework-template](docs/assets/imgs/stones-template.png)
+
 #### Author
 Michael Genesini
