@@ -1,0 +1,17 @@
+// ==========================================================================
+// Fonts: import fonts
+// ==========================================================================
+
+// Import font
+=importFont($name,$extension:$defaultFontExtension)
+	@font-face
+		font-family: $name
+		font-style: normal
+		font-weight: normal
+		src: getFontUrl($name,$extension)
+
+// Set font
+=setFont($name)
+	font-family: $name, sans-serif, arial
+	font-weight: normal
+	letter-spacing: 0
