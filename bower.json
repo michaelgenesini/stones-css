@@ -1,6 +1,7 @@
 {
   "name": "stones-css",
   "version": "0.1.1",
+  "keywords": ["stones","framework","css","sass"],
   "ignore": [
     "docs/",
     "node_modules",
