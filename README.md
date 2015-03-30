@@ -10,23 +10,28 @@ Modular front-end framework built in Sass (and Coffee)
   <a href="http://michaelgenesini.github.io/stones">Demo</a>
 </p>
 
+## Contents
 
-## Requirements
+- [Installation](#installation)
+- [Usage](#usage)
+- [Template layout](#template-layout)
+- [Author](#author)
+- [License](#license)
 
-**Requires Sass, which can be installed with** `gem install sass`
+# Installation
 
-**Requires Grunt Cli, which can be installed with** `sudo npm install -g grunt-cli`
+### Manual installation
 
+Download the[lastest release](https://github.com/michaelgenesini/Stones-framework/releases/latest) and copy the **stones.css** or the **stones.sass** file and add it to your project folder. Take a look at [usage guidelines](#usage) to customize the compiled css.
 
-## Installation
-```
-$ npm install
-$ grunt server
-```
+### Bower
+Install Stones with Bower by adding `stones-css` to your app's `bower.json`, otherwise install it via Bower by typing `bower install stones-css`.
 
-## Template layout
-
+# Template layout
 ![stones-framework-template](docs/assets/imgs/stones-template.png)
 
-#### Author
+# Author
 Michael Genesini
+
+# License
+Created by Michael Genesini, Released under the [MIT license](LICENSE.md).
