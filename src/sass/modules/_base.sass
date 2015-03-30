@@ -3,11 +3,11 @@
 // ==========================================================================
 
 @import ../core/global
+@import fonts
 @import colors
 
 // set font name and extension (default extension is ttf)
-//+setFont($font,"otf")
-
++importFont($font,"otf")
 
 +exports("base")
 
@@ -22,7 +22,7 @@
 		color: getColor(darkgrayd)
 		background-color: getColor(lightgray)
 		font-size: $baseFontSize
-		+getFont($defaultFonts)
+		+setFont($defaultFonts)
 		+line-height
 
 	h1, h2, h3, h4, h5, h6
