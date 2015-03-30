@@ -38,4 +38,4 @@ Install Stones with Bower by adding `stones-css` to your app's `bower.json`, oth
 Michael Genesini
 
 # License
-Created by Michael Genesini, Released under the [MIT license](LICENSE.md).
+Created by Michael Genesini, Released under the [MIT license](LICENSE).
