@@ -1,15 +1,39 @@
 {
   "name": "stones-css",
   "version": "0.1.1",
-  "keywords": ["stones","framework","css","sass"],
+  "keywords": [
+    "stones",
+    "framework",
+    "css",
+    "sass"
+  ],
   "ignore": [
     "docs/",
+    "src/views",
     "node_modules",
     ".sass-cache",
     ".gitignore",
-    "_config.yml"
+    "_config.yml",
+    "**/.*",
+    "bower_components",
+    "docs/bower_components",
+    "test",
+    "tests"
   ],
   "main": [
-    "build/stones.sass"
-  ]
+    "dist/css/stones.css",
+    "dist/js/stones.js",
+    "dist/imgs/*",
+    "dist/fonts/*",
+    "src/sass/*",
+    "src/coffee/*"
+  ],
+  "dependencies": {
+    "fontawesome": "~4.3.0"
+  },
+  "homepage": "https://github.com/michaelgenesini/Stones-framework",
+  "authors": [
+    "Michael <michael.genesini@gmail.com>"
+  ],
+  "license": "MIT"
 }
