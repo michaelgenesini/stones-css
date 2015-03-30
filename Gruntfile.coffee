@@ -1,5 +1,13 @@
 module.exports = (grunt) ->
+
+	appConfig =
+		src:	'src',
+		dist:	'dist',
+		docs:	'docs'
+
 	grunt.initConfig
+
+		config : appConfig
 
 		jade:
 			options:
@@ -17,7 +25,8 @@ module.exports = (grunt) ->
 				sourcemap: "none"
 			app:
 				files:
-					['docs/assets/css/stones.css': 'src/sass/stones.sass','build/stones.css': 'src/sass/stones.sass']
+					['<%= config.docs %>/assets/css/stones.css': '<%= config.src %>/sass/stones.sass','<%= config.dist %>/css/stones.css': '<%= config.src %>/sass/stones.sass']
+				# Maybe unnecessary
 				require: ['sass-json-vars']
 				noCache: true
 				debugInfo: true
@@ -25,55 +34,67 @@ module.exports = (grunt) ->
 		coffeelint:
 			app:
 				files:
-					src: ['src/js/**/*.coffee']
+					src: ['<%= config.src %>/coffee/**/*.coffee']
 
 		coffee:
 			options:
 				sourceMap: false
 			app:
 				files:
-					'docs/assets/js/main.js': ['src/js/**/*.coffee']
+					['<%= config.docs %>/assets/js/stones.js': '<%= config.src %>/coffee/**/*.coffee','<%= config.dist %>/js/stones.js': '<%= config.src %>/coffee/**/*.coffee']
 
 		copy:
 			main:
 				files: [
 					{
 						expand: true
-						cwd: 'src/imgs'
+						cwd: '<%= config.src %>/imgs'
 						src: '**/*'
-						dest: 'docs/assets/imgs'
+						dest: '<%= config.dist %>/imgs'
 					},
 					{
 						expand: true
-						cwd: 'src/fonts'
+						cwd: '<%= config.src %>/imgs'
 						src: '**/*'
-						dest: 'docs/assets/fonts'
+						dest: '<%= config.docs %>/assets/imgs'
+					},
+					{
+						expand: true
+						cwd: '<%= config.src %>/fonts'
+						src: '**/*'
+						dest: '<%= config.dist %>/fonts'
+					},
+					{
+						expand: true
+						cwd: '<%= config.src %>/fonts'
+						src: '**/*'
+						dest: '<%= config.docs %>/assets/fonts'
 					}
 				]
 
 		watch:
 			jade:
-				files: ['src/views/**/*.jade']
+				files: ['<%= config.src %>/views/**/*.jade']
 				tasks: ['jade', 'notify:watch']
 
 			coffee:
-				files: ['src/js/**/*.coffee']
+				files: ['<%= config.src %>/coffee/**/*.coffee']
 				tasks: ['coffeelint', 'coffee', 'notify:watch']
 
 			sass:
-				files: ['src/sass/**/*.sass']
+				files: ['<%= config.src %>/sass/**/*.sass']
 				tasks: ['sass', 'notify:watch']
 
 			imgs:
-				files: ['src/imgs/*']
+				files: ['<%= config.src %>/imgs/*']
 				tasks: ['copy', 'notify:watch']
 
 			fonts:
-				files: ['src/fonts/*']
+				files: ['<%= config.src %>/fonts/*']
 				tasks: ['copy', 'notify:watch']
 
 			build:
-				files: ['docs/assets/stylesheets/stone.css', 'docs/*.html', 'docs/assets/javascript/**/*.js']
+				files: ['<%= config.docs %>/assets/css/stone.css', '<%= config.docs %>/*.html', '<%= config.docs %>/assets/js/stones.js']
 				options:
 					livereload: true
 
