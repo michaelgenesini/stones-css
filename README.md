@@ -1,7 +1,7 @@
 Stones [![Build Status](https://travis-ci.org/michaelgenesini/stones-css.svg)](https://travis-ci.org/michaelgenesini/stones-css)
 ======
 
-Modular front-end framework built in Sass (and Coffee)
+Modular css framework built in Sass (and Coffee)
 
 <p align="center">
   <img src="https://copy.com/H717QhjtU7PhmYNt" alt="stones framework"/>
